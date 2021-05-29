@@ -30,22 +30,7 @@
             <table class="table">
                 <tr>
                     <th>No</th>
-                    <th>Nama Siswa</th>
-                    <th>Pelajaran</th>
-                    <th>Kelas</th>
-                    <th>Guru</th>
-                    <th>Nilai</th>
                 </tr>
-                @foreach($data as $key => $dt)
-                <tr>
-                    <td>{{ $key+1 }}</td>
-                    <td>{{ $dt->nama_siswa }}</td>
-                    <td>{{ $dt->nama_pelajaran }}</td>
-                    <td>{{ $dt->nama_kelas }}</td>
-                    <td>{{ $dt->nama_guru }}</td>
-                    <td>{{ $dt->nilai }}</td>
-                </tr>
-                @endforeach
             </table>
         </div>
     </div>

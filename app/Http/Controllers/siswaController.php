@@ -16,12 +16,12 @@ class NilaiController extends Controller
     {
         $data = DB::table('siswa')
             ->join('kelas','siswa.id_kelas','=','kelas.id_kelas')
-            ->join('setup_pelajaran','tbl_nilai.id_pelajaran','=','setup_pelajaran.id_pelajaran')
-            ->join('data_guru','tbl_nilai.id_guru','=','data_guru.id_guru')
-            ->join('data_siswa','tbl_nilai.id_siswa','=','data_siswa.id_siswa')
-            ->select('tbl_nilai.nilai', 'setup_kelas.nama_kelas', 'data_guru.nama_guru', 'data_siswa.nama_siswa', 'setup_pelajaran.nama_pelajaran')
+            ->join('')
+            ->join('')
+            ->join('')
+            ->select('')
             ->get();
-        return view('transaksi_nilai_0263', ['data' => $data]);
+        return view('', ['data' => $data]);
     }
 
     public function search(Request $request)
@@ -30,13 +30,13 @@ class NilaiController extends Controller
 
         $data = DB::table('siswa')
             ->where('siswa.nama_siswa','like',"%".$nama."%")
-            ->join('setup_kelas','tbl_nilai.id_kelas','=','setup_kelas.id_kelas')
-            ->join('setup_pelajaran','tbl_nilai.id_pelajaran','=','setup_pelajaran.id_pelajaran')
-            ->join('data_guru','tbl_nilai.id_guru','=','data_guru.id_guru')
-            ->join('data_siswa','tbl_nilai.id_siswa','=','data_siswa.id_siswa')
-            ->select('tbl_nilai.nilai', 'setup_kelas.nama_kelas', 'data_guru.nama_guru', 'data_siswa.nama_siswa', 'setup_pelajaran.nama_pelajaran')
+            ->join('')
+            ->join('')
+            ->join('')
+            ->join('')
+            ->select('')
             ->get();
-        return view('transaksi_nilai_0263', ['data' => $data]);
+        return view('', ['data' => $data]);
     }
 
     /**
